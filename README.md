@@ -21,9 +21,12 @@ java tvf target/*.jar
 
 ## front-end 
 ```
-- npm run install
-- npm run serve
-- npm run lint
+- package install
+npm install
+- execute
+npm run serve
+- code linting
+npm run lint
 ```
 
 ### home
