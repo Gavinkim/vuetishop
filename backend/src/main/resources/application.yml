@@ -1,0 +1,49 @@
+server:
+  port: 8080
+spring:
+  thymeleaf:
+    mode: HTML
+    check-template: false
+    cache: false
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hikari:
+      minimum-idle: 3
+      maximum-pool-size: 10
+      connection-timeout: 30000
+      idle-timeout: 600000
+      validation-timeout: 40000
+    sql-script-encoding: UTF-8
+    initialization-mode: always
+  jpa:
+    database: h2
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.show_sql: true
+      hibernate.use_sql_comments: true
+      hibernate.format_sql: true
+      hibernate.query.in_clause_parameter_padding: true
+    open-in-view: false
+  jackson:
+    default-property-inclusion: non_empty
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+logging:
+  level:
+    root: DEBUG
+    org.springframework.web.reactive.function.client.ExchangeFunctions: DEBUG
+    org.hibernate.type.descriptor.sql: trace
+  file:
+    path: target/logs
+
+
