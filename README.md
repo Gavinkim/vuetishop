@@ -4,7 +4,19 @@
 Tutorial for spring boot reactive and vuejs
 ```
 
-## back-end rest api-doc
+## back-end
+```
+- run
+mvn spring-boot:run
+- build
+mvn package
+- jar execute
+java tvf target/*.jar
+
+
+```
+### rest api server
+> [api-doc](https://banchango.herokuapp.com/api)
 ![Alt text](./images/apidoc.png)
 
 ## front-end 
@@ -13,9 +25,6 @@ Tutorial for spring boot reactive and vuejs
 - npm run serve
 - npm run lint
 ```
-
-### rest api server
-> [api-doc](https://banchango.herokuapp.com/api)
 
 ### home
 ![Alt text](./images/home.png)
