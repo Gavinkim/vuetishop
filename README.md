@@ -13,11 +13,9 @@ Tutorial for spring boot reactive and vuejs
 - npm run serve
 - npm run lint
 ```
+
 ### rest api server
 > [api-doc](https://banchango.herokuapp.com/api)
-
-### rest api repository
-> [rest-api repository](https://github.com/Gavinkim/spring-reactive-tutorial)
 
 ### home
 ![Alt text](./images/home.png)
